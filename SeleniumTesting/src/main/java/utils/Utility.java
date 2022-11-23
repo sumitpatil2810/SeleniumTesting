@@ -58,7 +58,7 @@ public class Utility
 			data=Double.toString(value);
 		}
 		return data;
-		
+	
 	}
 
 }

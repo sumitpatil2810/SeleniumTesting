@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-23T13:25:08 IST" name="Suite" finished-at="2022-11-23T13:25:47 IST" duration-ms="38480">
+    <groups>
+    </groups>
+    <test started-at="2022-11-23T13:25:08 IST" name="ChromeTest" finished-at="2022-11-23T13:25:47 IST" duration-ms="38480">
+      <class name="testClass.prefme">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:08 IST" name="launchbrowser" finished-at="2022-11-23T13:25:10 IST" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="createpomobject()[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:10 IST" name="createpomobject" finished-at="2022-11-23T13:25:10 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createpomobject -->
+        <test-method is-config="true" signature="logintoApplication()[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:10 IST" name="logintoApplication" finished-at="2022-11-23T13:25:22 IST" duration-ms="12542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApplication -->
+        <test-method signature="verify_WalkIn_CheckInTab()[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:22 IST" name="verify_WalkIn_CheckInTab" finished-at="2022-11-23T13:25:40 IST" duration-ms="17601" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "27.0"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "27.0"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at Walk_in_Check_in.WalkIn_CheckIn.SelectDate(WalkIn_CheckIn.java:158)
+at testClass.prefme.verify_WalkIn_CheckInTab(prefme.java:276)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_WalkIn_CheckInTab -->
+        <test-method is-config="true" signature="logoutApplication(org.testng.ITestResult)[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:40 IST" name="logoutApplication" finished-at="2022-11-23T13:25:47 IST" duration-ms="6500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_WalkIn_CheckInTab status=FAILURE method=prefme.verify_WalkIn_CheckInTab()[pri:0, instance:testClass.prefme@239a307b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="clearObject()[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:47 IST" name="clearObject" finished-at="2022-11-23T13:25:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObject -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClass.prefme@239a307b]" started-at="2022-11-23T13:25:47 IST" name="closeBrowser" finished-at="2022-11-23T13:25:47 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClass.prefme -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
